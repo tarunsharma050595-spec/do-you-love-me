@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Do You Love Me?</title>
+
+<style>
+body{
+text-align:center;
+font-family:Arial;
+margin-top:100px;
+background:#ffe6f0;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+margin:20px;
+cursor:pointer;
+}
+
+#no{
+position:absolute;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Do you love me? ❤️</h1>
+
+<button onclick="yes()">Yes ❤️</button>
+<button id="no" onmouseover="moveButton()">No 😢</button>
+
+<script>
+
+function yes(){
+alert("I knew it! ❤️");
+}
+
+function moveButton(){
+
+var button = document.getElementById("no");
+
+var x = Math.floor(Math.random() * window.innerWidth);
+var y = Math.floor(Math.random() * window.innerHeight);
+
+button.style.left = x + "px";
+button.style.top = y + "px";
+
+}
+
+</script>
+
+</body>
+</html>
